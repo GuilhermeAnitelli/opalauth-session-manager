@@ -18,6 +18,7 @@ function validaCampo(){
     const valorHash = valorCampo ** 2;
     console.log(valorHash)
  
+
 }
 
 
