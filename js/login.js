@@ -14,4 +14,9 @@ let valorCampo = parseInt (campoSenha.value)
 
 // Verificando se a senha é PAR
 console.log(valorCampo % 2 == 0);
+
+// Simulação de HASH
+
+const valorHash = valorCampo**2;
+console.log(valorHash);
 }
