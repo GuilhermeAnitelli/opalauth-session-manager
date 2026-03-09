@@ -1,3 +1,4 @@
+
  
 // Capturando os dados do campo SENHA:
  
@@ -18,3 +19,6 @@ function validaCampo(){
     console.log(valorHash)
  
 }
+
+
+
