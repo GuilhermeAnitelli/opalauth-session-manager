@@ -21,7 +21,7 @@ function validaCampo() {
     // Verificando se a senha é PAR:
     console.log(valorCampo % 2 === 0);
 }
-=======
+
 // Capturando os dados do campo SENHA:
 
 
@@ -29,7 +29,7 @@ const botaoEnviar = document.querySelector("#btn-entrar");
 
 botaoEnviar.addEventListener("click", validaCampo);
 
-function validaCampo(){
+function validaCampo() {
     const campoSenha = document.getElementById("input-senha");
     let valorCampo = parseInt(campoSenha.value);
 
@@ -38,8 +38,8 @@ function validaCampo(){
 
 
     // Simulacao de HASH
-    const valorHash = valorCampo**
-    console.log(valorHash);
+    const valorHash = valorCampo ** 2
+        console.log(valorHash);
 
 
 }
