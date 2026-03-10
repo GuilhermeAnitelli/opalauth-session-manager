@@ -1,3 +1,10 @@
+
+//#ISSUE - 1
+let nomeUsuario = "OpalAuth";
+let tentativasLogin = 3;
+
+console.log(`Bem-vindo, ${nomeUsuario}! Você tem ${tentativasLogin} tentativas de login restantes.`);
+
 const botaoEnviar = document.querySelector("#btn-entrar");
 
 botaoEnviar.addEventListener("click", validaCampo);
