@@ -155,7 +155,7 @@ listaUsuarios.forEach((usuario, indice, arrayCompleto) => {
 // console.log("Frutas incluem a letra 'n':", frutasComM);
 
 //Criando uma lista de FRUTAS:
-const listaFrutas = ["Maçã", "Banana", "Laranja", "Uva", "Abacaxi","Manga","Melancia"];
+const listaFrutas = ["Maçã", "Banana", "Laranja", "Uva", "Abacaxi", "Manga", "Melancia"];
 
 //Exemplo de concatenanaçao de arrays com o operador spread para criar uma nova lista de frutas que inclui as frutas da listaFrutas e algumas frutas adicionais:
 const frutasAdicionais = ["Abacate", "Goiaba"];
@@ -172,3 +172,29 @@ const usuarioCompleto = { ...dadosBasicos, ...dadosExtras, status: 'Ativo' };
 
 console.log(usuarioCompleto);
 // { nome: 'Theo', idade: 9, escola: 'FIAP', cidade: 'Curitiba', status: 'Ativo' }
+
+// #ISSUE - 4
+const btnLogin = document.querySelector("#btn-entrar");
+btnLogin.addEventListener("click", (event) => {
+    event.preventDefault();
+    const usuarioDigitado = document.querySelector('#input-user').value;
+    const senhaDigitada = parseInt(document.querySelector('#input-pass').value);
+
+    const usuarioEncontrado = listaUsuarios.find(u =>
+        u.usuario === usuarioDigitado && u.senhaOriginal
+        === senhaDigitada('#input-pass').value);
+
+    console.log("Tipo do retorno:", typeof usuarioEncontrado);
+
+    console.log("Tipo do retorno:", typeof usuarioEncontrado);
+    const statusSessao = document.querySelector('#status-sessao');
+
+    if (usuarioEncontrado) {
+        alert("Acesso Autorizado");
+        window.location.href = "dashboard.html";
+    } else {
+        statusSessao.textContent = "Usuário ou Senha inválidos";
+        statusSessao.style.color = "red";
+    }
+});
+
