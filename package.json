@@ -13,6 +13,7 @@
   },
   "author": "GuilhermeAnitelli",
   "license": "ISC",
+
   "type": "module",
   "bugs": {
     "url": "https://github.com/GuilhermeAnitelli/opalauth-session-manager/issues"
